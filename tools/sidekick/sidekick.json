@@ -1,5 +1,7 @@
 {
   "project": "Boilerplate",
+  "editUrlLabel": "Document Authoring",
+  "editUrlPattern": "https://da.live/edit#/jlawhorn/EDSTest3",
   "plugins": [
     {
       "id": "cif",
