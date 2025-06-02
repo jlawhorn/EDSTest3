@@ -80,8 +80,8 @@ export default async function decorate(block) {
     });
 
     storeSwitcher.id = 'storeview-modal';
-    while (fragmentStoreView.firstElementChild) {
-      storeSwitcher.append(fragmentStoreView.firstElementChild);
+    while (fragmentStoreView?.firstElementChild) {
+      storeSwitcher.append(fragmentStoreView?.firstElementChild);
     }
 
     // create classes for storeview modal sections
@@ -143,7 +143,7 @@ export default async function decorate(block) {
         if (storeRegion.children.length <= 1) {
           li.classList.add('storeview-single-store');
           const ulParent = li.closest('ul');
-          const replacedChild = (storeRegion.firstElementChild);
+          const replacedChild = (storeRegion?.firstElementChild);
           replacedChild.className = 'storeview-single-store';
 
           ulParent.replaceChild(replacedChild, li);
@@ -166,7 +166,7 @@ export default async function decorate(block) {
       })($storeSwitcherBtn);
     }
   }
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  while (fragment?.firstElementChild) footer.append(fragment?.firstElementChild);
 
   block.append(footer);
 }
