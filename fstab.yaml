@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: https://content.da.live/jlawhorn/EDSTest3/
+    url: https://drive.google.com/drive/folders/1fLHY-dLay3PON4dklnlZ04Msafc5NnAv
     type: markup
 
 folders:
