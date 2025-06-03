@@ -70,9 +70,9 @@
   --shape-border-width-2: 1.5px;
   --shape-border-width-3: 2px;
   --shape-border-width-4: 4px;
-  --shape-shadow-1: 0 0 16px 0 rgb(0 0 0 / 0.16);
-  --shape-shadow-2: 0 2px 16px 0 rgb(0 0 0 / 0.16);
-  --shape-shadow-3: 0 2px 3px 0 rgb(0 0 0 / 0.16);
+  --shape-shadow-1: 0 0 16px 0 rgb(0 0 0 / .16);
+  --shape-shadow-2: 0 2px 16px 0 rgb(0 0 0 / .16);
+  --shape-shadow-3: 0 2px 3px 0 rgb(0 0 0 / .16);
   --shape-icon-stroke-1: 1px;
   --shape-icon-stroke-2: 1.5px;
   --shape-icon-stroke-3: 2px;
