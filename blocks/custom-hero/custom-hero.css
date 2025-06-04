@@ -1,16 +1,16 @@
-.home-hero-wrapper {
+.custom-hero-wrapper {
   max-width: unset;
   padding: 0;
 }
 
-.home-hero-inner-container {
+.custom-hero-inner-container {
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
   padding: 18px;
 }
 
-.home-hero-title {
+.custom-hero-title {
   position: relative;
   z-index: 2;
   margin: 0;
@@ -18,14 +18,14 @@
   line-height: 1.2;
 }
 
-.home-hero-description,
-.home-hero-link {
+.custom-hero-description,
+.custom-hero-link {
   position: relative;
   z-index: 2;
   margin: 0;
 }
 
-.home-hero-image {
+.custom-hero-image {
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -38,25 +38,25 @@
   margin-right: -50vw;
 }
 
-.home-hero-image img {
+.custom-hero-image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.home-hero-overlay {
+.custom-hero-overlay {
   position: absolute;
   z-index: 1;
 }
 
-.home-hero-inner-container-left {
-  & .home-hero-title,
-  $ .home-hero-description {
+.custom-hero-inner-container-left {
+  & .custom-hero-title,
+  $ .custom-hero-description {
     text-align: left;
   }
 }
 
-.home-hero-overlay-left {
+.custom-hero-overlay-left {
   top: 0;
   right: 50%;
   left: 50%;
@@ -68,15 +68,15 @@
 }
 
 @media (width >= 900px) {
-  .home-hero-inner-container-left {
-    & .home-hero-title,
-    & .home-hero-description {
+  .custom-hero-inner-container-left {
+    & .custom-hero-title,
+    & .custom-hero-description {
       max-width: 50%;
       margin-right: auto;
     }
   }
 
-  .home-hero-overlay-left {
+  .custom-hero-overlay-left {
     width: 65vw;
     height: 100%;
     left: 50%;

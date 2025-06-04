@@ -1,6 +1,6 @@
 import { fetchIndex } from '../../scripts/scripts.js';
 
-const componentName = 'home-hero';
+const componentName = 'custom-hero';
 
 const CLASSES = {
   wrapper: `${componentName}-inner-container`,
@@ -61,14 +61,17 @@ const updateDOM = (block, markup) => {
 
 export default async function decorate(block) {
   const picture = block.querySelector('picture');
-  const index = await fetchData('merkle/home/home-hero');
-
-  if (!index || !index.data.length) {
-    console.error('No data available');
-    return;
+  const settingPath = block.querySelector('h1')?.innerText || '';
+  if (settingPath) {
+    const index = await fetchData(settingPath);
+    if (!index || !index.data.length) {
+      console.error('No data available');
+      return;
+    }
+    const formattedData = formatData(index.data);
+    const markup = createMarkup(formattedData, picture);
+    updateDOM(block, markup);
+  } else {
+    console.warn('No hero settings path found. Cannot render.');
   }
-
-  const formattedData = formatData(index.data);
-  const markup = createMarkup(formattedData, picture);
-  updateDOM(block, markup);
 }
