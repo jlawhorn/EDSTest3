@@ -4,9 +4,6 @@
       "commerce-core-endpoint": "https://catalogservice-2jk7koa-id4765luxiiu2.us-4.magentosite.cloud/graphql",
       "commerce-endpoint": "https://catalog-service.adobe.io/graphql",
       "headers": {
-        "all": {
-          "Store": "default"
-        },
         "cs": {
           "Magento-Customer-Group": "77de68daecd823babbb58edb1c8e14d7106e83bb",
           "Magento-Store-Code": "main_website_store",
