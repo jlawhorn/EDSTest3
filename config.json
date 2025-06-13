@@ -6,7 +6,7 @@
       "headers": {
         "all": {
           "Store": "default",
-          "origin": "http://localhost:3000/"
+          "origin": "https://main--edstest3--jlawhorn.aem.page/"
         },
         "cs": {
           "Magento-Customer-Group": "77de68daecd823babbb58edb1c8e14d7106e83bb",
