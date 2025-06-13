@@ -94,4 +94,9 @@ query STORE_CONFIG_QUERY {
     cart_printed_card
   }
 }
-`,br=async()=>G(hr,{method:"GET",cache:"force-cache"}).then(({errors:r,data:n})=>r?D(r):yr(n.storeConfig)),xr=async()=>{const r=t.authenticated?await W():await q();return f.emit("cart/data",r),r};export{R as C,U as a,W as b,B as c,q as d,br as e,I as g,V as i,xr as r,N as t};
+`,br=async()=>
+  G(hr, {
+    method: "GET",
+    cache: "force-cache",
+    headers: { Origin: window.location.origin },
+  }).then(({ errors: r, data: n }) => (r ? D(r) : yr(n.storeConfig))),xr=async()=>{const r=t.authenticated?await W():await q();return f.emit("cart/data",r),r};export{R as C,U as a,W as b,B as c,q as d,br as e,I as g,V as i,xr as r,N as t};

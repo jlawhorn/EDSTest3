@@ -18,4 +18,4 @@ import{f as s,h as i}from"./fetch-graphql.js";function _(e){return e?{baseMediaU
       sales_gift_wrapping
     }
   }
-`,a=async()=>s(o,{method:"GET",cache:"force-cache"}).then(({errors:e,data:r})=>e?i(e):_(r.storeConfig));export{a as g};
+`,a=async()=>s(o,{method:"GET",cache:"force-cache",headers:{Origin:window.location.origin}}).then(({errors:e,data:r})=>e?i(e):_(r.storeConfig));export{a as g};
