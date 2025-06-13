@@ -5,7 +5,8 @@
       "commerce-endpoint": "https://catalog-service.adobe.io/graphql",
       "headers": {
         "all": {
-          "Store": "default"
+          "Store": "default",
+          "origin": "http://localhost:3000/"
         },
         "cs": {
           "Magento-Customer-Group": "77de68daecd823babbb58edb1c8e14d7106e83bb",
