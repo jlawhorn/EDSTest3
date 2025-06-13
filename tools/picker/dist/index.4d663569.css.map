@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA;;;;AAIA","sources":["src/styles.css"],"sourcesContent":["html, body {\n    height: 100%;\n}\n\nbody {\n    margin: 0;\n}\n\n#app {\n    height: 100%;\n}"],"names":[],"version":3,"file":"index.4d663569.css.map","sourceRoot":"/__parcel_source_root/"}
